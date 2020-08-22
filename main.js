@@ -1,54 +1,10 @@
-// const Typewriter = function(txtElement, words, wait = 3000){
-//     this.txtElement = txtElement;
-//     this.words = words;
-//     this.txt = '';
-//     this.wordIndex = 0;
-//     this.wait = parseInt(wait,10);
-//     this.type();
-//     this.isDeleting = false;
-// }
-
-// Typewriter.prototype.type = function(){
-//     const current = this.wordIndex % this.words.length;
-//     const fullTxt = this.words[current];
-
-//     if(this.isDeleting){
-//         this.txt = fullTxt.substring(0, this.txt.length-1);
-
-//     }else{
-//         this.txt = fullTxt.substring(0, this.txt.length+1);
-//     }
-
-//     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-//     let typespeed = 300;
-
-//     if(this.isDeleting){
-//         typespeed /=2;
-//     }
-
-//     if(!this.isDeleting && this.txt === fullTxt){
-
-//         typespeed = this.wait;
-//         this.isDeleting = true;
-
-//     }else if(this.isDeleting && this.txt === ''){
-//         this.isDeleting = false;
-//         this.wordIndex++;
-//         typespeed = 500;
-//     }
-//     setTimeout(()=> this.type(),typespeed);
-// }
-
-
-
 class Typewriter {
-    constructor(txtElement,words,wait=3000){
+    constructor(txtElement,words,wait=1000){
         this.txtElement = txtElement;
     this.words = words;
     this.txt = '';
     this.wordIndex = 0;
-    this.wait = parseInt(wait,10);
+    this.wait = parseInt(wait,7);
     this.type();
     this.isDeleting = false;
     }
@@ -66,7 +22,7 @@ class Typewriter {
     
         this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
     
-        let typespeed = 300;
+        let typespeed = 150;
     
         if(this.isDeleting){
             typespeed /=2;
