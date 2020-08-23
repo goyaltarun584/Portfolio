@@ -61,16 +61,17 @@ body{
     padding: 10px;
     color: rgb(182, 178, 178);
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
 }
 #text h2{
-    padding: 10px;
+    padding: 5px;
     font-size: 2rem;
     color:rgb(38, 64, 103);
     font-family: 'Acme', sans-serif;
 }
 #para2 {
     font-size: 1.2rem;
-    padding: 10px;
+    padding: 5px;
     font-family: 'Raleway', sans-serif;
 }
 #break{
@@ -91,8 +92,4 @@ body{
 #btn{
     margin-left: 20px;
     margin-bottom: 10px;
-}
-
-#button{
-
 }
